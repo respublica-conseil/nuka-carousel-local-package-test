@@ -1,0 +1,50 @@
+{
+  "extends": [
+    "formidable/configurations/es6-react",
+    "prettier",
+    "prettier/react",
+    "jest-enzyme",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:cypress/recommended"
+  ],
+  "env": {
+    "node": true,
+    "browser": true,
+    "jest": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "globals": {
+    "page": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": ["prettier", "@typescript-eslint"],
+  "rules": {
+    "prettier/prettier": "error",
+    "react/no-multi-comp": 0,
+    "max-params": 0,
+    "no-magic-numbers": 0,
+    "react/prefer-es6-class": 0,
+    "react/prop-types": 0,
+    "react/sort-prop-types": 0,
+    "react/no-string-refs": 0,
+    "react/no-did-update-set-state": 0,
+    "max-statements": 0,
+    "no-invalid-this": 0,
+    "@typescript-eslint/no-unused-vars": ["error"],
+    "@typescript-eslint/no-var-requires": 0,
+    "no-unused-expressions": 0
+  }
+}
